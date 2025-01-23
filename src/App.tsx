@@ -67,7 +67,7 @@ function App() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-blue-500 bg-clip-text text-transparent">
               Portfolio
             </span>
             
@@ -77,8 +77,8 @@ function App() {
                 <a
                   key={item}
                   href={`#${item}`}
-                  className={`capitalize transition-colors hover:text-purple-500 ${
-                    activeSection === item ? 'text-purple-500' : isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  className={`capitalize transition-colors hover:text-blue-500 ${
+                    activeSection === item ? 'text-blue-500' : isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}
                 >
                   {item}
@@ -88,7 +88,7 @@ function App() {
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 className={`p-2 rounded-full ${
                   isDarkMode ? 'bg-gray-800 text-yellow-400' : 'bg-gray-100 text-gray-600'
-                } hover:bg-purple-500 hover:text-white transition-colors`}
+                } hover:bg-blue-500 hover:text-white transition-colors`}
               >
                 {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
@@ -100,7 +100,7 @@ function App() {
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 className={`p-2 rounded-full ${
                   isDarkMode ? 'bg-gray-800 text-yellow-400' : 'bg-gray-100 text-gray-600'
-                } hover:bg-purple-500 hover:text-white transition-colors`}
+                } hover:bg-blue-500 hover:text-white transition-colors`}
               >
                 {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
@@ -124,7 +124,7 @@ function App() {
                   href={`#${item}`}
                   className={`block px-3 py-2 rounded-md text-base font-medium capitalize ${
                     activeSection === item
-                      ? 'bg-purple-500 text-white'
+                      ? 'bg-red-500 text-white'
                       : isDarkMode
                         ? 'text-gray-300 hover:bg-gray-900'
                         : 'text-gray-600 hover:bg-gray-100'
@@ -143,28 +143,28 @@ function App() {
       <section id="home" className="min-h-screen flex items-center justify-center pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <img
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            src="https://firebasestorage.googleapis.com/v0/b/comics-tv-8e695.appspot.com/o/Images%2FHome%20Page%2FPranesh-Photoroom.png?alt=media&token=ddb61f08-3d11-49ee-97f2-d6e740d82880"
             alt="Profile"
-            className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-purple-500"
+            className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-blue-500"
           />
           <h1 className="text-4xl sm:text-6xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-              John Doe
+            <span className="bg-gradient-to-r from-blue-500 to-blue-500 bg-clip-text text-transparent">
+              Pranesh
             </span>
           </h1>
           <p className={`text-xl sm:text-2xl mb-8 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
             Full Stack Developer
           </p>
           <div className="flex justify-center space-x-4">
-            <a href="#contact" className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-full transition-colors">
+            <a href="#contact" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-colors">
               Contact Me
             </a>
-            <a href="#projects" className="border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white px-6 py-3 rounded-full transition-colors">
+            <a href="#projects" className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-full transition-colors">
               View Work
             </a>
           </div>
           <div className="mt-12">
-            <ChevronDown size={32} className="mx-auto animate-bounce text-purple-500" />
+            <ChevronDown size={32} className="mx-auto animate-bounce text-blue-500" />
           </div>
         </div>
       </section>
@@ -173,15 +173,15 @@ function App() {
       <section id="about" className={`py-20 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-blue-500 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
-                I'm a passionate Full Stack Developer with 5+ years of experience in building web applications.
-                I specialize in React, Node.js, and modern web technologies.
+                I'm a passionate Full Stack Developer.
+                I specialize in HTML, CSS, and Node JS.
               </p>
               <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
                 My journey in software development started with a deep curiosity for creating things that make a difference.
@@ -190,20 +190,20 @@ function App() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className={`${isDarkMode ? 'bg-black' : 'bg-white'} p-4 rounded-lg text-center border border-purple-500/20`}>
-                <h3 className="text-2xl font-bold text-purple-500">5+</h3>
-                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Years Experience</p>
+                <h3 className="text-2xl font-bold text-blue-500">2019-2022</h3>
+                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>PSG Polytechnic College</p>
               </div>
               <div className={`${isDarkMode ? 'bg-black' : 'bg-white'} p-4 rounded-lg text-center border border-purple-500/20`}>
-                <h3 className="text-2xl font-bold text-purple-500">50+</h3>
-                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Projects Completed</p>
+                <h3 className="text-2xl font-bold text-blue-500">2023-2024</h3>
+                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Texmo Blank</p>
               </div>
               <div className={`${isDarkMode ? 'bg-black' : 'bg-white'} p-4 rounded-lg text-center border border-purple-500/20`}>
-                <h3 className="text-2xl font-bold text-purple-500">30+</h3>
-                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Happy Clients</p>
+                <h3 className="text-2xl font-bold text-blue-500">2024-2025</h3>
+                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Freshworks Software Academy</p>
               </div>
               <div className={`${isDarkMode ? 'bg-black' : 'bg-white'} p-4 rounded-lg text-center border border-purple-500/20`}>
-                <h3 className="text-2xl font-bold text-purple-500">15+</h3>
-                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Technologies</p>
+                <h3 className="text-2xl font-bold text-blue-500"></h3>
+                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}></p>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@ function App() {
       <section id="skills" className={`py-20 ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-blue-500 bg-clip-text text-transparent">
               Skills & Expertise
             </span>
           </h2>
@@ -223,11 +223,11 @@ function App() {
               <div key={index} className={`${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'} p-6 rounded-lg border border-purple-500/20`}>
                 <div className="flex justify-between mb-2">
                   <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>{skill.name}</span>
-                  <span className="text-purple-500">{skill.level}%</span>
+                  <span className="text-blue-500">{skill.level}%</span>
                 </div>
                 <div className={`w-full ${isDarkMode ? 'bg-black' : 'bg-gray-200'} rounded-full h-2.5`}>
                   <div
-                    className="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full transition-all duration-500"
+                    className="bg-gradient-to-r from-blue-500 to-blue-500 h-2.5 rounded-full transition-all duration-500"
                     style={{ width: `${skill.level}%` }}
                   ></div>
                 </div>
@@ -241,7 +241,7 @@ function App() {
       <section id="projects" className={`py-20 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-blue-500 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
@@ -286,7 +286,7 @@ function App() {
       <section id="contact" className={`py-20 ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-red-500 to-red-500 bg-clip-text text-transparent">
               Get In Touch
             </span>
           </h2>
@@ -294,29 +294,29 @@ function App() {
             <div className="space-y-8">
               <div className="flex items-center space-x-4">
                 <div className="bg-purple-500/10 p-4 rounded-full">
-                  <Mail size={24} className="text-purple-500" />
+                  <Mail size={24} className="text-red-500" />
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>contact@example.com</p>
+                  <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>pranestaker@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <div className="bg-purple-500/10 p-4 rounded-full">
-                  <Linkedin size={24} className="text-purple-500" />
+                  <Linkedin size={24} className="text-red-500" />
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">LinkedIn</h3>
-                  <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>linkedin.com/in/johndoe</p>
+                  <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>linkedin.com/in/pranesh-ragu-5344b931b</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <div className="bg-purple-500/10 p-4 rounded-full">
-                  <Github size={24} className="text-purple-500" />
+                  <Github size={24} className="text-red-500" />
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">GitHub</h3>
-                  <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>github.com/johndoe</p>
+                  <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>github.com/Pranesh-alt</p>
                 </div>
               </div>
             </div>
@@ -334,7 +334,7 @@ function App() {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className={`w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-500/20 ${
+                  className={`w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 border border-red-500/20 ${
                     isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'
                   }`}
                 />
@@ -350,7 +350,7 @@ function App() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-3 rounded-lg transition-colors"
+                className="w-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white py-3 rounded-lg transition-colors"
               >
                 Send Message
               </button>
@@ -363,7 +363,7 @@ function App() {
       <footer className={`py-8 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>
-            © {new Date().getFullYear()} John Doe. All rights reserved.
+            © {new Date().getFullYear()} Pranesh. All rights reserved.
           </p>
         </div>
       </footer>
