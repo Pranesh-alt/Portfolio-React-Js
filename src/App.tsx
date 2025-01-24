@@ -35,7 +35,7 @@ function App() {
     { name: 'Java Script', level: 40 },
     { name: 'Python', level: 100 },
     { name: 'SQL', level: 100 },
-    { name: 'Problem Solving', level: 90 }
+    { name: 'Problem Solving', level: 100 }
   ];
 
   const projects = [
