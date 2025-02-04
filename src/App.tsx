@@ -44,7 +44,7 @@ function App() {
       description: 'A streaming platform for comic enthusiasts',
       image: 'https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       github: 'https://github.com/Pranesh-alt/comics-tv',
-      live: 'https://eff9-182-73-13-166.ngrok-free.app/'
+      live: 'https://c4c8-2401-4900-1cc9-8ee7-4946-4ec-aae8-8916.ngrok-free.app/'
     },
     {
       title: 'Expense Tracker',
