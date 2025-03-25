@@ -30,8 +30,8 @@ function App() {
   }, []);
 
   const skills = [
-    { name: 'HTML', level: 100 },
-    { name: 'CSS', level: 100 },
+    { name: 'HTML', level: 80 },
+    { name: 'CSS', level: 80 },
     { name: 'Java Script', level: 40 },
     { name: 'Python', level: 100 },
     { name: 'SQL', level: 100 },
