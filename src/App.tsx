@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Menu, X, ChevronDown, ExternalLink, Sun, Moon } from 'lucide-react';
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
       description: 'A streaming platform for comic enthusiasts',
       image: 'https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       github: 'https://github.com/Pranesh-alt/comics-tv',
-      live: 'https://c4c8-2401-4900-1cc9-8ee7-4946-4ec-aae8-8916.ngrok-free.app/'
+      live: 'https://node-js-ott-6.onrender.com/'
     },
     {
       title: 'Expense Tracker',
@@ -164,7 +164,7 @@ function App() {
             </a>
           </div>
           <div className="mt-12">
-            <ChevronDown size={32} className="mx-auto animate-bounce text-blue-500" />
+            <ChevronDown size={32}  className="mx-auto animate-bounce text-blue-500" />
           </div>
         </div>
       </section>
