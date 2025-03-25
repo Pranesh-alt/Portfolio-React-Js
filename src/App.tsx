@@ -181,7 +181,7 @@ function App() {
             <div className="space-y-6">
               <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
                 I'm a passionate Full Stack Developer.
-                I specialize in HTML, CSS, and Node JS.
+                I specialize in HTML, CSS, Javascript(Node JS) and Python(fastAPI).
               </p>
               <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
                 My journey in software development started with a deep curiosity for creating things that make a difference.
